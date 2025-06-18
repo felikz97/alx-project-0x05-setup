@@ -1,7 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",          // This makes "@" start at the root folder
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]         // Allow @ to resolve to anything under root
     }
   }
 }
+// This configuration file is used to set up module resolution in a JavaScript project.
+// It allows the use of "@" as a prefix for paths, making imports cleaner and more
+// maintainable. The "baseUrl" is set to the root of the project, and the "paths"
+// option maps "@" to the root directory, enabling imports like "@/components/MyComponent"
+// to resolve to "./components/MyComponent" in the file system.
+// This setup is particularly useful in larger projects where relative paths can become
