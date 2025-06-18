@@ -12,9 +12,9 @@ export interface GeneratedImageProps {
   height?: string
   action: (imagePath: string) => void
 }
-export interface ImageGalleryProps {
-  images: GeneratedImageProps[]
-  onImageClick: (image: GeneratedImageProps) => void
+
+export type RequestProps = {
+  prompt: string;
 }
 
-export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">;
+export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">
